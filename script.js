@@ -94,3 +94,94 @@ function gosto (filme,musica){
     console.log (`Filme escolhido é ${filme} e a música selecionada é ${musica}`)
 }
 gosto ("Pulp Fiction", "Geminiano - Djonga")
+
+// Crie um array que receba 5 itens e exiba no console.
+// Utilize um método para adicionar um nome ao inicio do array.
+// Utilize um método para remover o último nome do array.
+// Utilize um método para adicionar dois nomes ao fim do array.
+// Utilize um método para remover o primeiro nome do array.
+// Utilize um método para organizar em ordem crescente o seguinte array:
+// let numbers = [7,5,6,3,8,9,2,1,4]
+
+let n= ["Ana","Pedro","Rai","Tati","Joao"]
+console.log(n)
+
+n.splice (0,0, "Flavia")
+console.log(n)
+
+n.splice(6,1)
+console.log(n)
+
+n.splice(6,2, "Jose","Maria")
+console.log(n)
+
+n.splice(0,1)
+console.log(n)
+
+let numbers =[7,5,6,3,8,9,2,1,4]
+numbers.sort()
+console.log(numbers)
+
+// Crie um objeto que receba ao menos três propriedades sobre você.
+// Adicione uma nova propriedade sem alterar seu objeto inicial.
+// Remova uma propriedade desse objeto.
+//Mostre no console todas as propriedades desse objeto.
+// Crie um array  chamado "cadastro" contendo ao menos 5 objetos. 
+//Cada objeto deve receber as seguintes propriedades: nome,  idade,  telefone, amigos. 
+//Na propriedade amigos, adicione ao menos 4 itens.
+// Mostre no console o nome de um amigo de cada lista.
+
+let eu=
+{
+    nome: "Erika",
+    idade: 29,
+    signo: "aries"
+}
+
+console.log (eu)
+
+eu.Sobrenome ="Andrade"
+console.log (eu)
+
+delete eu.signo
+console.log(eu)
+
+let cadastro = [
+    {
+    nome: "Ana",
+    idade:20,
+    telefone: 99999999,
+    amigos: ["Pedro","Rai","Tati","Joao"]
+    },
+
+    {
+        nome: "Nati",
+        idade:20,
+        telefone: 99999999,
+        amigos: ["Pedro","Rai","Tati","Joao"]
+    },
+
+    {
+        nome: "Joao",
+        idade:20,
+        telefone: 99999999,
+        amigos: ["Pedro","Rai","Tati","Joao"]
+    },
+
+    {
+        nome: "Carla",
+        idade:20,
+        telefone: 99999999,
+        amigos: ["Pedro","Rai","Tati","Joao"]
+    },
+    {
+        nome: "Susi",
+        idade:20,
+        telefone: 99999999,
+        amigos: ["Pedro","Rai","Tati","Joao"]
+        },
+
+
+]
+
+console.log (cadastro[0].amigo[0],cadastro [1].amigo[1], cadastro [2].amigo[2], cadastro [3].amigo[3], cadastro [4].amigo[4] )
